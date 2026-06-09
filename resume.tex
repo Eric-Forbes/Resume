@@ -1,0 +1,174 @@
+\documentclass[9pt, letterpaper]{article}
+
+% ---- Packages ----
+\usepackage[top=0.38in, bottom=0.38in, left=0.50in, right=0.50in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% ---- Colors ----
+\definecolor{accent}{RGB}{10, 55, 105}
+\definecolor{tagcolor}{RGB}{35, 35, 35}
+
+% ---- Hyperref ----
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, pdfborder={0 0 0}}
+
+% ---- Line spacing ----
+\linespread{0.93}
+
+% ---- Section styling ----
+\titleformat{\section}
+  {\small\bfseries\color{accent}}
+  {}{0em}{\MakeUppercase}
+  [\vspace{-4pt}\color{accent}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+% ---- List styling ----
+\setlist[itemize]{leftmargin=1.1em, topsep=0pt, itemsep=0pt, parsep=0pt, label=\textbullet}
+\setlist[enumerate]{leftmargin=1.8em, topsep=1pt, itemsep=0.5pt, parsep=0pt}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ---- Macros ----
+\newcommand{\employer}[2]{%
+  \noindent{\small\textbf{#1}}\hfill{\footnotesize\textit{#2}}\par%
+}
+\newcommand{\subrole}[2]{%
+  \noindent{\footnotesize\textit{#1}}\hfill{\footnotesize\textit{#2}}\par%
+}
+\newcommand{\tagline}[1]{%
+  \noindent{\footnotesize\color{tagcolor}\bfseries\itshape #1}\par\vspace{1pt}%
+}
+\newcommand{\edu}[3]{%
+  \noindent{\small\textbf{#1}}\hfill{\footnotesize\textit{#2}}\par\vspace{-2pt}%
+  \noindent{\footnotesize\textit{#3}}\par%
+}
+
+% ============================================================
+\begin{document}
+
+% ---- Header ----
+\begin{center}
+  {\Large\bfseries Eric Forbes}\\[2pt]
+  {\footnotesize\color{accent}
+    5G Systems Integration Lead $\cdot$ Lockheed Martin $\cdot$ PE, PhD Candidate
+  }\\[2pt]
+  {\footnotesize
+    \href{mailto:mr.eric.forbes@gmail.com}{mr.eric.forbes@gmail.com}
+    $\;\cdot\;$
+    \href{https://www.linkedin.com/in/eric--forbes}{linkedin.com/in/eric--forbes}
+    $\;\cdot\;$
+    Philadelphia Area, PA
+  }
+\end{center}
+
+\vspace{1pt}
+
+% ============================================================
+\section{Experience}
+
+\employer{Lockheed Martin}{May 2021 -- Present}
+\subrole{5G Systems I\&T Lead, RMS}{November 2024 -- Present}
+\tagline{Leading O-RAN and Tactical MANET deployments for connecting mission-critical applications.}
+\begin{itemize}
+  \item Direct O-RAN software deployment on low-SWaP platforms; set technical direction and manage sub-contractor coordination.
+  \item Develop system architecture models; conduct travel and on-site integration for internal and external customers.
+\end{itemize}
+
+\subrole{5G Systems I\&T Engineer, RMS}{April 2024 -- November 2024}
+\tagline{Demonstrated the world's first 5G VPX CMOSS system with open-source software.}
+\begin{itemize}
+  \item Executed L2/L3 network integration, PTP timing analysis, 5G RAN/Core log debugging, and end-to-end system testing.
+\end{itemize}
+
+\subrole{4G Systems Engineer, Space}{August 2022 -- April 2024}
+\tagline{Brought the first LTE GEO Satellite system to close.}
+\begin{itemize}
+  \item Performed full-stack eNB analysis (UE modem \& eNB); developed test plans and authored program documentation.
+  \item Applied Python for large dataset analysis; Bash scripting for system debugging and automation.
+\end{itemize}
+
+\subrole{5G Systems Engineer, Space}{May 2021 -- August 2022}
+\tagline{Defined architecture and requirements for 5G Non-Terrestrial Networks (NTN).}
+\begin{itemize}
+  \item Developed NTN requirements and system network diagrams; tracked 3GPP Rel-17 NTN working group developments.
+\end{itemize}
+
+\vspace{2pt}
+\employer{L3Harris Technologies}{February 2020 -- May 2021}
+\subrole{Sr. Specialist, Systems Engineer}{}
+\tagline{Requirements Lead for a new Radar Warning Receiver (RWR) System program.}
+\begin{itemize}
+  \item Developed and decomposed requirements in IBM DOORS; engaged prime customers for requirements review and program analysis.
+  \item Applied MagicDraw \& SysML for MBSE across the Space and Airborne Systems division.
+\end{itemize}
+
+\vspace{2pt}
+\employer{G3 Technologies, Inc.}{January 2017 -- February 2020}
+\subrole{Cellular Systems Test Engineer}{}
+\tagline{Protocol testing across four generations of wireless standards for commercial and defense customers.}
+\begin{itemize}
+  \item Debugged and tested per 3GPP/3GPP2 standards (LTE, UMTS, GSM, CDMA); analyzed Qualcomm chipsets (QXDM).
+  \item Performed physical layer (RF) testing and verification; authored full system manuals and customer documentation.
+\end{itemize}
+
+\vspace{2pt}
+\employer{Intertek}{January 2015 -- January 2017}
+\subrole{Project Engineer}{}
+\tagline{Led compliance testing and certification for consumer electronics to ANSI, CA, and IEC safety standards.}
+\begin{itemize}
+  \item Managed customer timelines, executed test plans, and delivered compliance reports for end-product certification.
+  \item Served as Safety Officer; completed OSHA 40-hour training.
+\end{itemize}
+
+% ============================================================
+\section{Education}
+
+\edu{Stevens Institute of Technology}{2020 -- Fall 2027 (Expected)}{Doctor of Philosophy (PhD), Systems Engineering --- 5G}
+\vspace{1pt}
+\edu{Stevens Institute of Technology}{2020 -- 2024}{Graduate Certificate, Space Systems Engineering}
+\vspace{1pt}
+\edu{New Jersey Institute of Technology}{2014 -- 2016}{Master of Science (MS), Electrical Engineering --- Wireless Communications}
+\vspace{1pt}
+\edu{Penn State University}{2010 -- 2014}{Bachelor of Science (BS), Electrical Engineering}
+
+% ============================================================
+\section{Certifications}
+
+\noindent{\footnotesize
+  Project Management Professional (PMP), May 2022
+  $\;\cdot\;$
+  Licensed Professional Engineer (PE), New York, Dec.\ 2019 --- Electronics, Controls \& Communications
+  $\;\cdot\;$
+  Fundamentals of Engineering (FE), Jan.\ 2017
+  $\;\cdot\;$
+  IEEE Wireless Communications Professional (WCP), Oct.\ 2018
+}
+
+% ============================================================
+\section{Publications}
+
+\begin{enumerate}[label={\footnotesize[\arabic*]}, leftmargin=2em, itemsep=0.5pt, topsep=1pt]
+  \item {\footnotesize E.~Forbes \textit{et al.}, ``Coexistent Evaluation on the Effects of Radar PRF and 5G Symbol-Based Scheduling,''
+        \textit{IEEE MILCOM}, Los Angeles, CA, Oct.\ 2025. \textbf{Poster Session Honorable Mention.}}
+
+  \item {\footnotesize E.~Forbes \textit{et al.}, ``5G and Radar Coexistence: Demonstrating Pulsed Radar Interference and 5G Performance Metrics,''
+        \textit{IEEE MILCOM Demo Session}, Oct.\ 2025.}
+
+  \item {\footnotesize E.~Forbes \textit{et al.}, ``Cellular Data-Based Indoor Localization for Smart Health Applications,''
+        \textit{IEEE CHASE}, Jun.\ 2025.}
+
+  \item {\footnotesize E.~Forbes \textit{et al.}, ``Communication Systems for Autonomous eVTOL: Regulatory Challenges, Emerging Technologies, and Future Directions,''
+        \textit{IEEE}, 2025.}
+
+  \item {\footnotesize E.~Forbes, E.~Silverstein, and Y.~Wang, ``Elevation-Aware BLER-Centric Link Adaptation for Dynamic LEO 5G NTN Systems,''
+        \textit{2026 IEEE Aerospace Conference}, 2026.}
+\end{enumerate}
+
+\end{document}
