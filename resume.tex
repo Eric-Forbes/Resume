@@ -1,7 +1,7 @@
 \documentclass[9pt, letterpaper]{article}
 
 % ---- Packages ----
-\usepackage[top=0.38in, bottom=0.38in, left=0.50in, right=0.50in]{geometry}
+\usepackage[top=0.35in, bottom=0.35in, left=0.50in, right=0.50in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{charter}
 \usepackage{microtype}
@@ -18,14 +18,14 @@
 \hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent, pdfborder={0 0 0}}
 
 % ---- Line spacing ----
-\linespread{0.93}
+\linespread{0.90}
 
 % ---- Section styling ----
 \titleformat{\section}
   {\small\bfseries\color{accent}}
   {}{0em}{\MakeUppercase}
   [\vspace{-4pt}\color{accent}\rule{\linewidth}{0.4pt}]
-\titlespacing*{\section}{0pt}{5pt}{2pt}
+\titlespacing*{\section}{0pt}{3pt}{2pt}
 
 % ---- List styling ----
 \setlist[itemize]{leftmargin=1.1em, topsep=0pt, itemsep=0pt, parsep=0pt, label=\textbullet}
@@ -57,7 +57,7 @@
 \begin{center}
   {\Large\bfseries Eric Forbes}\\[2pt]
   {\footnotesize\color{accent}
-    5G Systems Integration Lead $\cdot$ Lockheed Martin $\cdot$ PE, PhD Candidate
+    5G Systems Integration Lead $\cdot$ Lockheed Martin $\cdot$ PE, PMP, PhD Candidate
   }\\[2pt]
   {\footnotesize
     \href{mailto:mr.eric.forbes@gmail.com}{mr.eric.forbes@gmail.com}
@@ -68,17 +68,25 @@
   }
 \end{center}
 
-\vspace{1pt}
+% ============================================================
+\section{Profile}
+
+\noindent{\footnotesize
+Wireless product leader grown from bench-level test engineering to directing O-RAN deployments,
+sub-contractors, and customer integrations. I own products from the top down --- architecture,
+technical direction, customers --- with hands-on depth at every layer beneath. I build teams that
+make products, investing in long-term strategy and team culture over short-term wins.
+}
 
 % ============================================================
 \section{Experience}
 
 \employer{Lockheed Martin}{May 2021 -- Present}
 \subrole{5G Systems I\&T Lead, RMS}{November 2024 -- Present}
-\tagline{Leading O-RAN and Tactical MANET deployments for connecting mission-critical applications.}
+\tagline{Product owner for O-RAN and Tactical MANET deployments connecting mission-critical applications.}
 \begin{itemize}
-  \item Direct O-RAN software deployment on low-SWaP platforms; set technical direction and manage sub-contractor coordination.
-  \item Develop system architecture models; conduct travel and on-site integration for internal and external customers.
+  \item Set technical direction for O-RAN software deployment on low-SWaP platforms; direct and coordinate sub-contractor teams.
+  \item Own system architecture models through to hands-on, on-site integration for internal and external customers.
 \end{itemize}
 
 \subrole{5G Systems I\&T Engineer, RMS}{April 2024 -- November 2024}
@@ -97,19 +105,19 @@
 \subrole{5G Systems Engineer, Space}{May 2021 -- August 2022}
 \tagline{Defined architecture and requirements for 5G Non-Terrestrial Networks (NTN).}
 \begin{itemize}
-  \item Developed NTN requirements and system network diagrams; tracked 3GPP Rel-17 NTN working group developments.
+  \item Developed NTN requirements and network diagrams; tracked 3GPP Rel-17 NTN working groups to position the product for where the standard was heading.
 \end{itemize}
 
-\vspace{2pt}
+\vspace{1pt}
 \employer{L3Harris Technologies}{February 2020 -- May 2021}
 \subrole{Sr. Specialist, Systems Engineer}{}
 \tagline{Requirements Lead for a new Radar Warning Receiver (RWR) System program.}
 \begin{itemize}
-  \item Developed and decomposed requirements in IBM DOORS; engaged prime customers for requirements review and program analysis.
+  \item Owned requirements development and decomposition in IBM DOORS; engaged prime customers for requirements review and program analysis.
   \item Applied MagicDraw \& SysML for MBSE across the Space and Airborne Systems division.
 \end{itemize}
 
-\vspace{2pt}
+\vspace{1pt}
 \employer{G3 Technologies, Inc.}{January 2017 -- February 2020}
 \subrole{Cellular Systems Test Engineer}{}
 \tagline{Protocol testing across four generations of wireless standards for commercial and defense customers.}
@@ -118,7 +126,7 @@
   \item Performed physical layer (RF) testing and verification; authored full system manuals and customer documentation.
 \end{itemize}
 
-\vspace{2pt}
+\vspace{1pt}
 \employer{Intertek}{January 2015 -- January 2017}
 \subrole{Project Engineer}{}
 \tagline{Led compliance testing and certification for consumer electronics to ANSI, CA, and IEC safety standards.}
@@ -131,11 +139,8 @@
 \section{Education}
 
 \edu{Stevens Institute of Technology}{2020 -- Fall 2027 (Expected)}{Doctor of Philosophy (PhD), Systems Engineering --- 5G}
-\vspace{1pt}
 \edu{Stevens Institute of Technology}{2020 -- 2024}{Graduate Certificate, Space Systems Engineering}
-\vspace{1pt}
 \edu{New Jersey Institute of Technology}{2014 -- 2016}{Master of Science (MS), Electrical Engineering --- Wireless Communications}
-\vspace{1pt}
 \edu{Penn State University}{2010 -- 2014}{Bachelor of Science (BS), Electrical Engineering}
 
 % ============================================================
@@ -154,7 +159,7 @@
 % ============================================================
 \section{Publications}
 
-\begin{enumerate}[label={\footnotesize[\arabic*]}, leftmargin=2em, itemsep=0.5pt, topsep=1pt]
+\begin{enumerate}[label={\footnotesize[\arabic*]}, leftmargin=2em, itemsep=0pt, topsep=0pt]
   \item {\footnotesize E.~Forbes \textit{et al.}, ``Coexistent Evaluation on the Effects of Radar PRF and 5G Symbol-Based Scheduling,''
         \textit{IEEE MILCOM}, Los Angeles, CA, Oct.\ 2025. \textbf{Poster Session Honorable Mention.}}
 
